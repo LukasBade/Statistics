@@ -1,0 +1,34 @@
+Teilergebnisse NANUAG-Gesamtprojekt - Gruppe 02 - Version 01
+(Nur Kontrollwerte zur Selbstueberpruefung, kein vollstaendiger Loesungsweg!)
+
+--- Teil 1: Mitarbeiterdaten ---
+Durchschnittsalter (nach Bereinigung), erste 2 Nachkommastellen: xx,02
+Anzahl bereinigter (verbleibender) Datensaetze: 98287
+Pearson-Korrelation Alter/Jahresgehalt, erste 2 Nachkommastellen: 0,61...
+
+--- Teil 2: Umsatzentwicklung ---
+Bestimmtheitsmass Polynom 4. Grades (Kontrollwert, nicht zwingend beste Kurve), erste 2 Nachkommastellen: 0,99...
+
+--- Teil 3: NANU-Glueck Lotterie ---
+Erwartungswert/Standardabweichung X10 (Kontrolle): E = -1.01 EUR, SD = 136.88 EUR
+Kombinationsspiel X10 + X2 gleichzeitig (Teil 3e, Unabhaengigkeit vorausgesetzt):
+  E[X10+X2] = -2.07 EUR, SD[X10+X2] = 136.92 EUR
+Individuelle Aufgabe (m=4, n=15, höchstens 5-mal):
+  Trefferwahrscheinlichkeit je Ziehung p, erste 2 Nachkommastellen: 0,32...
+  Gesuchte Wahrscheinlichkeit, erste 2 Nachkommastellen: 0,65...
+
+--- Teil 4: Qualitaetskontrolle (Normalverteilung) ---
+MR1: NICHT normalverteilt (bimodal)
+MR2: normalverteilt, mu rundet auf 886.0, sigma rundet auf 1.8
+MR3: normalverteilt, mu rundet auf 73.9, sigma rundet auf 0.37
+
+--- Teil 5: Statistische Tests (alpha=0,05; Bonferroni-korrigiert: alpha'=0,0125) ---
+a) Gauss-Test MR2 gegen Sollmass mu0=883.0 (bekannt: sigma0=1.8):
+   z = 524.89, p-Wert Groessenordnung: < 0,001  -> H0 verworfen (unkorrigiert)
+b) Zweistichproben-t-Test Gehalt Maenner vs. Frauen: t = 36.29, p-Wert Groessenordnung: < 0,001
+   Beobachteter Gehaltsunterschied (grobe Groessenordnung): 4% (+/- 1 Prozentpunkt)
+c) Binomialtest Frauenanteil Fuehrungspositionen (H0: p=0,30, einseitig 'kleiner'):
+   beobachteter Anteil, erste 2 Nachkommastellen: 0,26...
+   p-Wert Groessenordnung: < 0,001
+d) Chi-Quadrat-Unabhaengigkeitstest Anrede x Abteilung: chi2 = 509.7, df = 14, p-Wert Groessenordnung: < 0,001
+e) Bonferroni: alpha' = 0,05/4 = 0,0125 - pruefen Sie fuer jeden Test aus a)-d), ob sich die Entscheidung dadurch aendert.
